@@ -578,7 +578,7 @@ the Zihintntl and Zicbop extensions.
 
 In order to access the RISC-V scalar bit manipulation intrinsics, it is
 necessary to include the header file `riscv_bitmanip.h`.
-
+F
 The functions are only only available if the compiler's `-march` string
 enables the required ISA extension. (Calling functions for not enabled
 ISA extensions will lead to compile-time and/or link-time errors.)
@@ -940,6 +940,9 @@ Each queryable extension must have an associated `groupid` and `bitmask` that in
 | zcf | 1 | 5
 | zcmop | 1 | 6
 | zawrs | 1 | 7
+| zcmp | 1 | 8
+| zilsd | 1 | 9
+| zclsd | 1 | 10
 |====
 
 === Version Selection
